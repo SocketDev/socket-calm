@@ -1,0 +1,58 @@
+{
+  "name": "socket-calm",
+  "displayName": "Socket Calm",
+  "description": "A low-noise syntax theme in warm plum and sand. Six colors, no shouting — light and dark, straight from Socket's design system.",
+  "version": "1.0.0",
+  "publisher": "socketdev",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "dark",
+    "light",
+    "minimal"
+  ],
+  "galleryBanner": {
+    "color": "#29202e",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SocketDev/socket-calm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SocketDev/socket-calm/issues"
+  },
+  "homepage": "https://github.com/SocketDev/socket-calm#readme",
+  "scripts": {
+    "validate": "node scripts/validate-themes.mjs",
+    "previews": "node scripts/generate-previews.mjs",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "prepackage": "npm run validate"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.2.1"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Socket Calm Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/socket-calm-dark-color-theme.json"
+      },
+      {
+        "label": "Socket Calm Light",
+        "uiTheme": "vs",
+        "path": "./themes/socket-calm-light-color-theme.json"
+      }
+    ]
+  }
+}
