@@ -21,9 +21,9 @@ Initial release.
 - Bracket pair colorization and active bracket pair guides in six palette hues.
 - TextMate coverage for TypeScript/JavaScript, JSX/TSX, JSON, HTML, CSS/SCSS/Less, Markdown,
   YAML, TOML, shell, diff, regex, Python, Rust, Go, and C-family preprocessor directives.
-- `npm run validate` — checks JSON validity, duplicate keys, hex syntax, scope collisions,
+- `pnpm run validate` — checks JSON validity, duplicate keys, hex syntax, scope collisions,
   color-id existence against a local VS Code install, and WCAG contrast across 61 interface
   pairs plus all syntax and ANSI colors.
-- `npm run previews` — regenerates the README screenshots from the theme JSON.
+- `pnpm run previews` — regenerates the README screenshots from the theme JSON.
 
 [1.0.0]: https://github.com/SocketDev/socket-calm/releases/tag/v1.0.0

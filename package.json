@@ -6,6 +6,7 @@
   "publisher": "socketdev",
   "license": "MIT",
   "icon": "images/icon.png",
+  "packageManager": "pnpm@10.34.5",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -36,7 +37,7 @@
     "previews": "node scripts/generate-previews.mjs",
     "package": "vsce package",
     "publish": "vsce publish",
-    "prepackage": "npm run validate"
+    "prepackage": "pnpm run validate"
   },
   "devDependencies": {
     "@vscode/vsce": "^3.2.1"

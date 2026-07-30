@@ -3,7 +3,7 @@
 // never drift from the actual colors. Needs Google Chrome for the screenshot
 // step; writes images/preview-{dark,light}.png.
 //
-// Run with: npm run previews
+// Run with: pnpm run previews
 
 import { readFileSync, writeFileSync, existsSync, rmSync } from 'node:fs'
 import { execFileSync } from 'node:child_process'

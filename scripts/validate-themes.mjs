@@ -2,7 +2,7 @@
 // Validates both Socket Calm themes: JSON shape, hex syntax, duplicate keys,
 // and WCAG contrast for every foreground/background pair the UI actually renders.
 //
-// Run with: npm run validate
+// Run with: pnpm run validate
 
 import { readFileSync, existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'

@@ -96,7 +96,7 @@ warning, so nesting depth is legible without introducing new hues.
 
 ## Accessibility
 
-`npm run validate` enforces, on every change:
+`pnpm run validate` enforces, on every change:
 
 - Every one of the 61 interface foreground/background pairs the workbench actually renders
   meets WCAG AA (4.5:1) for body text or AA-large (3:1) for secondary text and icons.
@@ -139,10 +139,10 @@ symbols, and enum members resolve correctly in TypeScript, Python, Rust, and Go.
 ## Development
 
 ```bash
-npm install
-npm run validate    # JSON, color ids, duplicate keys, contrast
-npm run previews    # regenerate README screenshots (needs Google Chrome)
-npm run package     # build socket-calm-<version>.vsix
+pnpm install
+pnpm run validate    # JSON, color ids, duplicate keys, contrast
+pnpm run previews    # regenerate README screenshots (needs Google Chrome)
+pnpm run package     # build socket-calm-<version>.vsix
 ```
 
 The previews are generated from the theme JSON rather than screenshotted by hand, so the
