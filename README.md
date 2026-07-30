@@ -29,6 +29,79 @@ Or from the command line:
 code --install-extension socketdev.socket-calm
 ```
 
+## Vim / Neovim
+
+The same theme ships as a Vim colorscheme in [vim/colors/socket-calm.vim](vim/colors/socket-calm.vim) —
+one file covering both variants, true-color and 256-color terminals, Vim 8+ and Neovim
+(including Treesitter, LSP semantic tokens, diagnostics, and terminal ANSI colors).
+
+### Install
+
+**Manually** — copy the file into your colors directory:
+
+```bash
+mkdir -p ~/.vim/colors && curl -fLo ~/.vim/colors/socket-calm.vim https://raw.githubusercontent.com/SocketDev/socket-calm/main/vim/colors/socket-calm.vim
+```
+
+For Neovim, use `~/.config/nvim/colors/` instead of `~/.vim/colors/`.
+
+**With a plugin manager** — point it at this repo and set the runtime path to the `vim/`
+subdirectory:
+
+```vim
+" vim-plug
+Plug 'SocketDev/socket-calm', { 'rtp': 'vim' }
+```
+
+```lua
+-- lazy.nvim
+{ "SocketDev/socket-calm", lazy = false, priority = 1000,
+  config = function(plugin) vim.opt.rtp:append(plugin.dir .. "/vim") end }
+```
+
+### Use
+
+Typing `:colorscheme socket-calm` works, but only for that session. To make it stick, put it in
+your config file — `~/.vimrc` for Vim, `~/.config/nvim/init.lua` for Neovim. Neither file exists
+on a fresh install; create it if it isn't there.
+
+```vim
+" ~/.vimrc
+syntax enable
+set termguicolors        " true color; without it the theme falls back to 256 colors
+set background=dark      " Socket Calm Dark — or 'light' for Socket Calm Light
+silent! colorscheme socket-calm
+```
+
+```lua
+-- ~/.config/nvim/init.lua
+vim.opt.termguicolors = true
+vim.opt.background = "dark"   -- or "light"
+vim.cmd.colorscheme("socket-calm")
+```
+
+Set `background` *before* `colorscheme` — the colorscheme reads it to decide which variant to
+build. The `silent!` is optional and just keeps Vim starting cleanly if the colorscheme file ever
+goes missing, instead of raising `E185` on every launch.
+
+Switching `set background=light` ⇄ `set background=dark` after loading swaps variants on the
+spot. Comments are italic by default; to disable that (e.g. for terminals without italics),
+set this before loading:
+
+```vim
+let g:socket_calm_italics = 0
+```
+
+Inside tmux or screen, Vim can't infer true-color support from termcap, so `termguicolors` alone
+silently leaves you on the 256-color fallback. Add these above it:
+
+```vim
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+```
+
+Neovim handles this itself and doesn't need them.
+
 ## Palette
 
 Both variants share one structure: a neutral ramp for the interface, six syntax colors, and a
