@@ -49,7 +49,7 @@
     "prepackage": "pnpm run validate"
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.2.1"
+    "@vscode/vsce": "^4.1.1"
   },
   "contributes": {
     "themes": [
