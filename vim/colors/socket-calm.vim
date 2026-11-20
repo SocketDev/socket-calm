@@ -23,20 +23,20 @@ let s:italics = get(g:, 'socket_calm_italics', 1)
 
 " Palettes: [gui, cterm256]
 if &background ==# 'light'
-  let s:bg          = ['#e5e1de', 254]
+  let s:bg          = ['#f7f3ef', 255]
   let s:fg          = ['#2a2a30', 236]
   let s:ui_fg       = ['#29202e', 235]
-  let s:bg_widget   = ['#f2efee', 255]   " floats, menus
-  let s:bg_bright   = ['#f6f5f4', 255]
-  let s:bg_panel    = ['#ddd8d4', 253]   " cursorline, side areas
-  let s:bg_soft     = ['#ddd8d4', 253]   " pmenu selection
-  let s:visual      = ['#d4cec9', 252]
-  let s:border      = ['#c9c1bb', 251]
-  let s:border_hi   = ['#aa9c93', 247]
-  let s:linenr      = ['#837367', 243]
-  let s:status_fg   = ['#564b43', 239]
-  let s:muted       = ['#6c5f55', 241]
-  let s:dim         = ['#98887c', 245]
+  let s:bg_widget   = ['#fcfaf8', 231]   " floats, menus
+  let s:bg_bright   = ['#fefdfc', 231]
+  let s:bg_panel    = ['#efebe7', 254]   " cursorline, side areas
+  let s:bg_soft     = ['#efebe7', 254]   " pmenu selection
+  let s:visual      = ['#e6e1dc', 253]
+  let s:border      = ['#dbd8d4', 252]
+  let s:border_hi   = ['#b8b1ac', 250]
+  let s:linenr      = ['#746d78', 243]
+  let s:status_fg   = ['#4b4550', 239]
+  let s:muted       = ['#5b555e', 240]
+  let s:dim         = ['#8a838e', 245]
   let s:comment     = ['#7e7e91', 244]
   let s:keyword     = ['#8735d9', 98]
   let s:func        = ['#2e4dc7', 26]
@@ -48,17 +48,17 @@ if &background ==# 'light'
   let s:warn        = ['#8a5a00', 94]
   let s:orange      = ['#a05320', 130]
   let s:cursor      = ['#e60086', 162]
-  let s:diff_add    = ['#ced2ca', 194]
-  let s:diff_del    = ['#dcc7c3', 224]
-  let s:diff_change = ['#dad1c3', 230]
-  let s:diff_text   = ['#c8b697', 222]
-  let s:search      = ['#c5b290', 222]
-  let s:search_lite = ['#d3c6b2', 230]
+  let s:diff_add    = ['#dde1d9', 194]
+  let s:diff_del    = ['#ebd6d2', 224]
+  let s:diff_change = ['#eae0d2', 230]
+  let s:diff_text   = ['#d4c2a2', 222]
+  let s:search      = ['#d1be9c', 222]
+  let s:search_lite = ['#e1d4bf', 230]
   let s:ansi = [
         \ ['#2a2a30', 236], ['#a8332b', 124], ['#4a7b5a', 65],  ['#8a5a00', 94],
-        \ ['#2e4dc7', 26],  ['#e60086', 162], ['#17636b', 23],  ['#ddd8d4', 253],
-        \ ['#6c5f55', 241], ['#8d251e', 88],  ['#366646', 65],  ['#613f00', 58],
-        \ ['#203dac', 25],  ['#bd006e', 125], ['#0d464c', 23],  ['#f6f5f4', 255]]
+        \ ['#2e4dc7', 26],  ['#e60086', 162], ['#17636b', 23],  ['#efebe7', 254],
+        \ ['#5b555e', 240], ['#8d251e', 88],  ['#366646', 65],  ['#613f00', 58],
+        \ ['#203dac', 25],  ['#bd006e', 125], ['#0d464c', 23],  ['#fefdfc', 231]]
 else
   let s:bg          = ['#29202e', 235]
   let s:fg          = ['#f5f5fa', 255]

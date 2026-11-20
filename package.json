@@ -3,9 +3,10 @@
   "displayName": "Socket Calm",
   "description": "A low-noise syntax theme in warm plum and sand. Six colors, no shouting — light and dark, straight from Socket's design system.",
   "version": "1.0.0",
-  "publisher": "socketdev",
+  "publisher": "SocketSecurity",
   "license": "MIT",
   "icon": "images/icon.png",
+  "preview": false,
   "packageManager": "pnpm@10.34.5",
   "engines": {
     "vscode": "^1.85.0"
@@ -14,11 +15,18 @@
     "Themes"
   ],
   "keywords": [
-    "theme",
     "color-theme",
     "dark",
     "light",
-    "minimal"
+    "minimal",
+    "theme"
+  ],
+  "tags": [
+    "color-theme",
+    "dark",
+    "light",
+    "minimal",
+    "theme"
   ],
   "galleryBanner": {
     "color": "#29202e",
@@ -29,6 +37,7 @@
     "url": "https://github.com/SocketDev/socket-calm.git"
   },
   "bugs": {
+    "email": "support@socket.dev",
     "url": "https://github.com/SocketDev/socket-calm/issues"
   },
   "homepage": "https://github.com/SocketDev/socket-calm#readme",

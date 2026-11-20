@@ -5,6 +5,14 @@ All notable changes to Socket Calm are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- **Socket Calm Light** — surface ramp re-anchored on the design system's `Bg/base` (`#f7f3ef`),
+  with `Border/ivory` (`#dbd8d4`) for borders and plum-tinted neutrals led by `Text/secondary`
+  (`#5b555e`) for muted text. Syntax colors are unchanged. The Vim colorscheme follows.
+
 ## [1.0.0] — 2026-07-29
 
 Initial release.

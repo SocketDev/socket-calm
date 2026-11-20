@@ -6,4 +6,6 @@ vim/**
 images/icon.svg
 .gitignore
 .editorconfig
+.DS_Store
+pnpm-lock.yaml
 *.vsix
