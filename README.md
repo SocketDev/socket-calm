@@ -30,7 +30,7 @@ Install. Then pick a variant with `⌘K ⌘T` / `Ctrl+K Ctrl+T`:
 Or from the command line:
 
 ```bash
-code --install-extension socketdev.socket-calm
+code --install-extension SocketSecurity.socket-calm
 ```
 
 ## Install in Vim / Neovim
